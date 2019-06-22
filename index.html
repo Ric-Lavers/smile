@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <!-- <link href="src/manifest.json" rel="manifest" /> -->
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <div class="video-container">
+      <video width='640' height="480"></video>
+      <div class="smile-img"></div>
+      <div class='canvas-wrapper'>
+        <canvas id='photoCanvas' width="640" height="480"></canvas>
+        <canvas id='overlayCanvas' width="640" height="480"></canvas>
+        <canvas id='resultCanvas' width="640" height="480"></canvas>
+      </div>
+    </div>
+    
+    <div class="button-controls">
+      <button id="takePhotoButton">
+        Capture
+      </button>
+      
+      <button id="savePhotoButton">
+        <a 
+        href="#" 
+        class="button" 
+        id="btn-download"
+        download='thank-you-for-your-smile.png'
+      >  Save
+      </a>
+    </button>
+      
+      <button id="resetPhotoButton">
+        Reset
+      </button>
+      
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

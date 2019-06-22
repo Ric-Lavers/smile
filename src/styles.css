@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+}
+.video-container {
+  position: relative;
+}
+.smile-img {
+  width: 640px;
+  height: 480px;
+  background: url("./smile.png") no-repeat 50% 85%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left:0;
+  background-size: 32%;
+  opacity: 0.95;
+}
+
+
+.canvas-wrapper {
+  position:absolute;
+  top:0;
+  width: 640px;
+  height: 480px;
+  display: none;
+
+}
+
+.canvas-wrapper #photoCanvas,
+.canvas-wrapper #resultCanvas,
+.canvas-wrapper #overlayCanvas {
+  position: absolute;
+  width: 640px;
+  height: 480px;
+}
+
+.canvas-wrapper #photoCanvas{
+  z-index: 10;
+}
+.canvas-wrapper  #resultCanvas {
+  z-index: 13;
+}
+.canvas-wrapper  #overlayCanvas{
+  z-index: 15;
+  top: 0%;    
+}
