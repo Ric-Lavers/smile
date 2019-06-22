@@ -6,7 +6,7 @@ document.getElementById("app").innerHTML = `
 <h1>🤡Smile-a-ton🤡</h1>
 `;
 
-var constraints = { audio: false, video: { width: 450, height: 450 } };
+var constraints = { audio: false, video: { facingMode: "user", width: 450, height: 450 } };
 
 window.onload = onGetUserMediaButtonClick();
 
